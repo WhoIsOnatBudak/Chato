@@ -31,7 +31,7 @@ export default function login() {
             </div>
             <div className="flex flex-column justify-content-center align-items-center">
                 <Button className="w-4 justify-content-center p-1 m-2" onClick={() => {
-                        route.push("/")
+                        route.push("/talk")
                 }}>Login</Button>
                 <Button className="w-4 justify-content-center p-1 m-2 bg-white border-0 text-blue-500" onClick={() => {
                         route.push("/register")
