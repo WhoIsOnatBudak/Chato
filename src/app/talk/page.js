@@ -12,21 +12,25 @@ import { Button } from 'primereact/button';
 export default function Talk() {
   return (
     <div className="h-screen flex flex-column" style={{ fontFamily: "'Geist Mono VF', monospace" }}>
-      {/* Top Navigation */}
-      <div className="flex justify-content-end p-4">
-        <i className="pi pi-user text-2xl cursor-pointer" title="Account"></i> {/* PrimeIcons user icon */}
-      </div>
+    
 
       {/* Main Content */}
       <div className="flex flex-grow-1">
         {/* Left Side - 1/6 of the width */}
-        <div className="w-2 flex align-items-center justify-content-center bg-gray-200">
+        <div className="w-2 bg-gray-200 shadow-5">
           {/* Add content for the left side here */}
-          <p>Left Side Content</p>
+          <p className="p-2">Left Side Content</p>
+          <p className="p-2">Left Side Content</p>
+          <p className="p-2">Left Side Content</p>
+          <p className="p-2">Left Side Content</p>
         </div>
 
         {/* Right Side - Remaining space */}
         <div className="flex-grow-1 flex flex-column">
+          {/* Top Navigation */}
+          <div className="flex justify-content-end p-4">
+            <i className="pi pi-user text-2xl cursor-pointer" title="Account"></i> {/* PrimeIcons user icon */}
+          </div>
           <div className="flex flex-grow-1"></div> {/* Empty space to push content to the bottom */}
           <div className="flex flex-row justify-content-center mb-4">
             <div className="relative w-8">
