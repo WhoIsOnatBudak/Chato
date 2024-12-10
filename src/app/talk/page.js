@@ -6,10 +6,13 @@ import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css'; // Ensure PrimeReact styles are loaded
 import 'primeicons/primeicons.css'; // Import PrimeIcons for the account icon
 
+import { useRouter } from "next/navigation";
+
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 
 export default function Talk() {
+  const route = useRouter();
   return (
     <div className="h-screen flex flex-column" style={{ fontFamily: "'Geist Mono VF', monospace" }}>
     
@@ -29,7 +32,9 @@ export default function Talk() {
         <div className="flex-grow-1 flex flex-column">
           {/* Top Navigation */}
           <div className="flex justify-content-end p-4">
-            <i className="pi pi-user text-2xl cursor-pointer" title="Account"></i> {/* PrimeIcons user icon */}
+            <i className="pi pi-user text-2xl cursor-pointer" title="Account" onClick={() => {
+                        route.push("/about")
+                }}></i> {/* PrimeIcons user icon */}
           </div>
           <div className="flex flex-grow-1"></div> {/* Empty space to push content to the bottom */}
           <div className="flex flex-row justify-content-center mb-4">

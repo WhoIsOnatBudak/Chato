@@ -29,7 +29,7 @@ export default function login() {
                 <div className="w-6 text-blue-500">
                     <div>Password :</div>
                 </div>
-                <InputText className="w-6" style={{ fontFamily: "'Geist Mono VF', monospace" }}></InputText>
+                <InputText type="password" className="w-6" style={{ fontFamily: "'Geist Mono VF', monospace" }}></InputText>
             </div>
             <div className="flex flex-column justify-content-center align-items-center">
                 <Button className="w-4 justify-content-center p-1 m-2" onClick={() => {
